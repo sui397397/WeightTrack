@@ -1,0 +1,138 @@
+/* ====== 全体レイアウト ====== */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* ============ Header ============ */
+.app-header {
+  background: #3a7afe;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* ====== コンテナ ====== */
+.login-container {
+  background: #fff;
+  width: 320px;
+  padding: 100px 30px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* ====== タイトル ====== */
+.app-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3a7afe;
+  margin-bottom: 10px;
+}
+
+.login-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* ====== フォーム ====== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-field {
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 1.8px solid #d3d7df;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-field:focus {
+  border-color: #3a7afe;
+  box-shadow: 0 0 0 3px rgba(58, 122, 254, 0.15);
+}
+
+/* ====== ログインボタン ====== */
+.login-btn {
+  background: #3a7afe;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #2e68e0;
+}
+
+/* ====== パスワード忘れリンク ====== */
+.forgot-link {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* ====== 新規登録リンク ====== */
+.signup {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.signup-link {
+  color: #3a7afe;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}

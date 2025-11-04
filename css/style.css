@@ -1,0 +1,182 @@
+/* ============ Base ============ */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ============ Header ============ */
+.app-header {
+  background: #3a7afe;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ============ Layout ============ */
+.app-content {
+  padding: 20px;
+  flex: 1;
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ============ Cards ============ */
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* ============ Record Section ============ */
+.record-card .label {
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.record-values {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.value {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.value span {
+  font-size: 18px;
+  color: #777;
+}
+
+.diff {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* ============ Chart ============ */
+.chart {
+  text-align: center;
+}
+
+.chart svg {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+.btn-small {
+  margin-top: 10px;
+  background: #3a7afe;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ============ Grid Buttons ============ */
+.grid-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.grid-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  height: 100px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.grid-btn span {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.grid-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.record-btn { background: #3a7afe; }
+.goal-btn { background: #36c19f; }
+.graph-btn { background: #6bb4ff; }
+
+/* ============ Notice ============ */
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notice-icon {
+  background: #ff5c5c;
+  color: #fff;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.notice-text {
+  flex: 1;
+  font-size: 15px;
+  color: #333;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 480px) {
+  .app-content { padding: 15px; }
+  .grid-btn { height: 90px; font-size: 20px; }
+  .grid-btn span { font-size: 13px; }
+}
+

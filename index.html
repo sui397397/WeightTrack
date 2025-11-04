@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeightTrack</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>WeightTrack</h1>
+    <button class="menu-btn">☰</button>
+  </header>
+
+  <main class="app-content">
+    <section class="card record-card">
+      <p class="label">Today's record</p>
+      <div class="record-values">
+        <div>
+          <h2 class="value">76.9<span>kg</span></h2>
+          <div class="diff">↓ 0.3 kg</div>
+        </div>
+        <div>
+          <h2 class="value">22.5<span>%</span></h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="card chart-card">
+      <div class="chart">
+        <svg viewBox="0 0 300 100">
+          <polyline fill="none" stroke="#3a7afe" stroke-width="3"
+            points="10,70 50,60 90,75 130,55 170,65 210,60 250,70" />
+          <circle cx="10" cy="70" r="3" fill="#3a7afe"/>
+          <circle cx="50" cy="60" r="3" fill="#3a7afe"/>
+          <circle cx="90" cy="75" r="3" fill="#3a7afe"/>
+          <circle cx="130" cy="55" r="3" fill="#3a7afe"/>
+          <circle cx="170" cy="65" r="3" fill="#3a7afe"/>
+          <circle cx="210" cy="60" r="3" fill="#3a7afe"/>
+          <circle cx="250" cy="70" r="3" fill="#3a7afe"/>
+        </svg>
+        <button class="btn-small">View details</button>
+      </div>
+    </section>
+
+    <section class="grid-buttons">
+      <button class="grid-btn record-btn">＋<br><span>Record</span></button>
+      <button class="grid-btn goal-btn">🎯<br><span>Set goal</span></button>
+      <button class="grid-btn graph-btn">📈<br><span>View graph</span></button>
+    </section>
+
+    <section class="card notice">
+      <div class="notice-icon">!</div>
+      <div class="notice-text">Did you forget to record yesterday?</div>
+    </section>
+  </main>
+</body>
+</html>
